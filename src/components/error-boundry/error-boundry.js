@@ -8,14 +8,14 @@ export default class ErrorBounder extends Component {
 	}
 
 	componentDidCatch(error) {
-		this.setState({hasError:false});
+		this.setState({hasError:true});
 	}
 
 	render(){
 		if(this.state.hasError) {
 			return <ErrorIndicator/>
 		}
-		return <Spinner/>
+		return this.props.children;
 	}
 };
 

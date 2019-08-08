@@ -1,15 +1,12 @@
-import React, {Component} from 'react';
-
-
-import ErrorBounder from './../error-boundry/error-boundry.js';
+import React from 'react';
 
 
 
-export default class App extends Component {
-	render() {
-		return (
-			<ErrorBounder/>
-		)
-	} 
+
+const App = () => {
+	return (
+		<h1>app</h1>
+	)
 };
 
+export default App;
