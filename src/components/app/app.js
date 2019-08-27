@@ -5,15 +5,17 @@ import CartPage from '../pages/cart.js';
 
 const App = () => {
 	return (
-		<Switch>
-			<Route 
-				path="/"
-				component={HomePage}
-				exact />
-			<Route 
-				path="/cart"
-				component={CartPage} />
-		</Switch>
+		<main role="main" className="container">
+			<Switch>
+				<Route 
+					path="/"
+					component={HomePage}
+					exact />
+				<Route 
+					path="/cart"
+					component={CartPage} />
+			</Switch>
+		</main>
 	)
 	
 };

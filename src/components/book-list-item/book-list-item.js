@@ -2,12 +2,12 @@ import React, {Fragment} from 'react';
 
 
 const BookListItem = ({book}) => {
-	const {title, autor} = book;
+	const {title, author} = book;
 	return (
-		<Fragment>
+		<div className="book-list-item">
 			<span>{title}</span><br/>
-			<span>{autor}</span>
-		</Fragment>
+			<span>{author}</span>
+		</div>
 	)
 };
 

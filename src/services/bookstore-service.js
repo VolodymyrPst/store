@@ -1,7 +1,7 @@
 
-export default class BookstoreService {
+export default class BookStoreService {
 
-	getBooks() {
+	getBooks() { 
 		return [
 			{id: 1, title: 'Prodaction-Ready', autor: 'Susan J.'},
 			{id: 2, title: 'Prodaction', autor: 'Susan K.'},
