@@ -1,15 +1,23 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import HomePage from '../pages/home.js';
+import CartPage from '../pages/cart.js';
 
-
-import ErrorBounder from './../error-boundry/error-boundry.js';
-
-
-
-export default class App extends Component {
-	render() {
-		return (
-			<ErrorBounder/>
-		)
-	} 
+const App = () => {
+	return (
+		<main role="main" className="container">
+			<Switch>
+				<Route 
+					path="/"
+					component={HomePage}
+					exact />
+				<Route 
+					path="/cart"
+					component={CartPage} />
+			</Switch>
+		</main>
+	)
+	
 };
 
+export default App;
